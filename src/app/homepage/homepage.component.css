@@ -1,0 +1,38 @@
+.catchy{
+    width: 50%;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5vh;
+    margin-bottom: -10vh;
+    color: grey;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #52ab98;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.fl {
+    flex-grow: 1;
+}
+
+.phone {
+    width: 200px;
+}
+
+.mail {
+    width: 250px;
+}
