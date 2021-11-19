@@ -1,38 +1,62 @@
+
 .catchy{
-    width: 50%;
     position: relative;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 5vh;
-    margin-bottom: -10vh;
-    color: grey;
+    width: 50%;
+    /* background-color: #363b3e; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* padding: 5vh; */
+    color: white;
+    padding-left: 5vh;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.base {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 20vh;
+
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+h1 {
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 65px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-weight: bold;
+    
 }
 
 .contact-info{
-    display: flex;
-    justify-content: space-between;
+    padding-top: 2vh;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .btn {
-    background-color: #52ab98;
+    flex-grow: 0;
+    background-color: #19c56f;
     font-weight: bold;
     color: white;
-}
-
-.contact-details{
-    display: flex;
-    flex-direction: row;
-    gap: 2vh;
-}
-
-.fl {
-    flex-grow: 1;
-}
-
-.phone {
-    width: 200px;
-}
-
-.mail {
-    width: 250px;
+    font-size: 25px;
+    /* position: absolute; */
+    height: fit-content;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    margin-top: 2.8vh;
+    border-radius: 0vh;
 }

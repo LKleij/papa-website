@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { AppRoutingModule } from './app-routing.module';
 import { ServiceComponent } from './services/service/service.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { ServiceComponent } from './services/service/service.component';
     HomepageComponent,
     ServicesComponent,
     AboutMeComponent,
-    ServiceComponent
+    ServiceComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

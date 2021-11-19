@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
@@ -10,6 +10,11 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  directTo() {
+    document.getElementsByClassName('contactme-view')[0].scrollIntoView({behavior: 'smooth', block: 'start' });
+
   }
 
 }

@@ -1,129 +1,15 @@
 .service-list {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: stretch;
-    
-    height: 100%;
+    gap: 3vh;
 }
 
-.service-item {
-    align-self: stretch;
-
-    border-top: 1px solid black;
-    position: relative;
+.service-item-container {
+    flex-grow: 1;
+    position:relative;
     z-index: 1;
-    /* flex-grow: 0; */
-    /* height:fit-content; */
-/* 
-    display: flex;
-    flex-direction: column; */
+    flex-basis: 0;
 }
 
-.bg-1-1, .bg-2-1, .bg-3-1 {
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    background-color: black;
-    opacity: 0.0;
-    width: 100%;
-}
-
-h1, h2, h3, h4 {
-    font-family: sans-serif;
-}
-.bg-1 {
-    z-index: -1;
-    position: absolute;
-    background-image: url("../resources/accounting-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.0;
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
-
-    /* -webkit-border-radius: 1vh;
-    -moz-border-radius: 1vh;
-    border-radius: 1vh;
-    border: none; */
-}
-
-div.item-1:hover .bg-1{
-    opacity: 0.5;
-}
-
-div.item-1:hover .bg-1-1{
-    opacity: 0.5;
-}
-
-div.item-1:hover .service-item-body{
-    color: white;
-}
-
-
-
-
-
-div.item-2:hover .bg-2{
-    opacity: 0.5;
-}
-div.item-2:hover .bg-2-1{
-    opacity: 0.5;
-}
-div.item-2:hover .service-item-body{
-    color: white;
-}
-
-div.item-3:hover .bg-3{
-    opacity: 0.6;
-}
-div.item-3:hover .bg-3-1{
-    opacity: 0.5;
-}
-div.item-3:hover .service-item-body{
-    color: white;
-}
-
-.service-item-body {
-    width: 100%;
-    height: 100%;
-    padding: 4vh;
-/* 
-    -webkit-transition: color 0.5s; 
-    transition: color 0.5s; */
-}
-
-.bg-2 {
-    z-index: -1;
-    position: absolute;
-    background-image: url("../resources/accounting-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.0;
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
-
-    /* -webkit-border-radius: 1vh;
-    -moz-border-radius: 1vh;
-    border-radius: 1vh;
-    border: none; */
-}
-
-.bg-3 {
-    z-index: -1;
-    position: absolute;
-    background-image: url("../resources/accounting-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.0;
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
-
-    /* -webkit-border-radius: 1vh;
-    -moz-border-radius: 1vh;
-    border-radius: 1vh;
-    border: none; */
+.service-list-header {
+    text-align: center;
 }

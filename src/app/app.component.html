@@ -1,15 +1,18 @@
 <div class="page-layout">
   
   <div class="navigation-view">
-    <ul class="nav justify-content-center">
+    <ul class="nav ">
       <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(home)" >Home</a>
+        <a class="nav-link nav-f" routerLink="/" (click)="scroll(home)" href="javascript:void(0)" >Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(services)">Services</a>
+        <a class="nav-link nav-f" routerLink="/" (click)="scroll(services)" href="javascript:void(0)">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(aboutme)">About me</a>
+        <a class="nav-link nav-f" routerLink="/" (click)="scroll(aboutme)" href="javascript:void(0)">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-f" routerLink="/" (click)="scroll(contactme)" href="javascript:void(0)">Contact</a>
       </li>
     </ul>
   </div>  
@@ -29,6 +32,10 @@
     <div class="aboutme-view pad-main">
       <div style="position: relative; top: -10vh;" #aboutme></div>
       <app-about-me></app-about-me>
+    </div>
+    <div class="contactme-view pad-main">
+      <div style="position: relative; top: -10vh;" #contactme></div>
+      <app-contact-form></app-contact-form>
     </div>
   </div>
   
