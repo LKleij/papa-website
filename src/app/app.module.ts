@@ -8,6 +8,8 @@ import { ServicesComponent } from './services/services.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ServiceComponent } from './services/service/service.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { HeaderMainComponent } from './header-main/header-main.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ServicesComponent,
     AboutMeComponent,
     ServiceComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    TopNavigationComponent,
+    HeaderMainComponent
   ],
   imports: [
     BrowserModule,

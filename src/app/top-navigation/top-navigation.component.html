@@ -1,0 +1,11 @@
+<div class="nav-container" [style.width]="initialViewportSize.width + 'px'" [style.height]="initialNavHeight + 'px'">
+    <div class="nav-logo">
+        <div class="logo"></div>
+    </div>
+    <div class="nav-content">
+        <a class="nav-item-style" (click)="scroll('home-scroll')" href="javascript:void(0)" >Home</a>
+        <a class="nav-item-style" (click)="scroll('services-scroll')" href="javascript:void(0)">Services</a>
+        <a class="nav-item-style" (click)="scroll('aboutme-scroll')" href="javascript:void(0)">About me</a>
+        <a class="nav-item-style" (click)="scroll('contactme-scroll')" href="javascript:void(0)">Contact</a>
+    </div>
+</div>  

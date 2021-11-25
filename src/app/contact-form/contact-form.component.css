@@ -1,33 +1,62 @@
 .contact-layout {
     display: flex;
     width: 100%;
-    gap: 3vh;
+    gap: 3%;
+    /* rgb(147, 152, 228) */
+    justify-content: center;
+    background-color: #e67235;
+    border-radius: 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: 12%;
+}
+
+.service-list-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    width: 800px;
+    text-align: center;
 }
 
 .form-layout {
     flex-grow: 0;
-    width: 70%;
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-left: -5vh;
-    padding: 5vh;
+    margin-left: -5%;
+    padding: 5%;
     background-color: white;
     border-radius: 5px;
 }
 
 .network-layout {
+    width: fit-content;
     background-color: white;
     border-radius: 5px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 5vh;
-    margin-right: -5vh;
+    padding: 5%;
+    margin-right: -5%;
     height: fit-content;
-    gap: 1vh;
+    gap: 1%;
 }
 
+.form-control {
+    border-radius: 20px;
+}
 .form-l {
     display: flex;
     flex-direction: column;
+}
+
+.send-msg-btn {
+    width:100%; 
+    background: linear-gradient(90deg, rgb(69, 60, 204), rgb(56, 219, 91)); 
+    color:white; 
+    font-weight: bold;
+    border-radius: 100px;
 }

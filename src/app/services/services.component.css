@@ -1,6 +1,7 @@
 .service-list {
     display: flex;
-    gap: 3vh;
+    gap: 5%;
+    padding-top: 12%;
 }
 
 .service-item-container {
@@ -11,5 +12,12 @@
 }
 
 .service-list-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    width: 800px;
     text-align: center;
 }

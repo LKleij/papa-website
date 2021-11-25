@@ -1,32 +1,35 @@
+<div class="service-list-header">
+    <div class="header-content">
+        <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis rerum culpa magni repellat! 
+            Temporibus vitae mollitia et error quibusdam praesentium asperiores in, debitis repellat, eius omnis rem quo totam.</p>
+    </div>
+</div>
 <div class="contact-layout">
     <div class="form-layout">
         <form [formGroup]="contactForm" class="form-l">
 
             <div class="mb-3">
-                <label for="nameInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="" formControlName="name">
+                <input type="text" class="form-control" placeholder="Name" formControlName="name">
               </div>
             <div class="mb-3">
-                <label for="emailInput" class="form-label">Email address</label>
-                <input type="email" class="form-control" [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" id="emailInput" placeholder="" formControlName="email">
+                <input type="email" class="form-control" placeholder="Email" [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" formControlName="email">
                 <div *ngIf="email.dirty && email.invalid && email.value.length > 0" class="small pt-1" style="color: #dc3545;">
                     Not a valid email.
                 </div>
               </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" id="exampleFormControlTextarea1" rows="8" formControlName="message"></textarea>
+                <textarea class="form-control" placeholder="Your message" [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="8" formControlName="message"></textarea>
                 <div *ngIf="message.dirty && message.invalid && message.value.length > 0" class="small pt-1" style="color: #dc3545">
                     Please write a longer message.
                 </div>
             </div>
-            <button class="btn" style="width:fit-content; background-color: #19c56f; color:white; font-weight: bold;">Send message</button>
+            <button class="btn send-msg-btn">Send message</button>
         </form>
     </div>
-    <div class="network-layout">
-        
+    <div class="network-layout">       
         <div class="item-1">
-            <a >afsafas@gmail.com</a>
+            <a>afsafas@gmail.com</a>
         </div>
         <div class="item-2">
             <a >+316238427</a>

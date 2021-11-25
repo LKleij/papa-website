@@ -1,42 +1,40 @@
-<div class="page-layout">
-  
-  <div class="navigation-view">
-    <ul class="nav ">
-      <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(home)" href="javascript:void(0)" >Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(services)" href="javascript:void(0)">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(aboutme)" href="javascript:void(0)">About me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-f" routerLink="/" (click)="scroll(contactme)" href="javascript:void(0)">Contact</a>
-      </li>
-    </ul>
-  </div>  
-  <div class="navigation-hidden-placeholder" #home></div>
-  <div class="views">
-    <div class="home-view">
-      <div style="position: relative; top: -10vh;" #home></div>
-      <div class="bg-img"></div>
-      <div class="home-body pad-main">
-        <app-homepage></app-homepage>
+<div class="page-wrapper">
+  <div class="header-wrapper" >
+      <div class="header-placeholder" style="position: relative; top: -0px;" #home></div>
+
+      <div  class="nav-top-wrapper" [style.height]="initialNavHeight + 'px'">
+          <app-top-navigation></app-top-navigation>
       </div>
-    </div>
-    <div class="service-view pad-main" >
-      <div style="position: relative; top: -10vh;" #services></div>
-      <app-services></app-services>
-    </div>
-    <div class="aboutme-view pad-main">
-      <div style="position: relative; top: -10vh;" #aboutme></div>
-      <app-about-me></app-about-me>
-    </div>
-    <div class="contactme-view pad-main">
-      <div style="position: relative; top: -10vh;" #contactme></div>
-      <app-contact-form></app-contact-form>
-    </div>
+
+      <div class="header-content-wrapper" [style.height]="(initialViewportSize.height - initialNavHeight)  + 'px'">
+          <app-header-main></app-header-main>
+      </div>
+  </div>
+  <div class="body-wrapper">
+    <div [style.height]="'2000px'"></div>
+
   </div>
   
+  <!-- <div class="home-view">
+    <div class="home-scroll" style="position: relative; top: -100%;" #home></div>
+    <app-homepage></app-homepage>
+  </div>
+
+  <div class="service-view">
+    <div class="services-scroll" style="position: relative; top: -13px;" #services></div>
+    <app-services></app-services>
+  </div>
+
+  <div class="aboutme-view">
+    <div class="aboutme-scroll" style="position: relative; top: -5%;" #aboutme></div>
+    <app-about-me></app-about-me>
+  </div>
+
+  <div class="contactme-view">
+    <div class="contactme-scroll" style="position: relative; top: -5%;"></div>
+    <app-contact-form></app-contact-form>
+  </div> -->
 </div>
+
+
+<!-- USE THIS AS AN EXAMPLE: https://themes.muffingroup.com/be/course2_el/ -->

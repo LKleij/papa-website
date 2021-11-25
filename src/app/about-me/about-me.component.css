@@ -10,6 +10,10 @@ h2 {
     font-weight: bold;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 
 img {
     position: relative;
@@ -17,6 +21,16 @@ img {
     border-radius: 50%;
     border-style: solid;
     border-color: white;
+}
+.service-list-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    width: 800px;
+    text-align: center;
 }
 
 .mmm {
@@ -26,12 +40,17 @@ img {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5vh;
-    padding-left: 5vh;
+    padding: 10%;
+    margin-top: 12%;
+    padding-left: 30%;
+    padding-right: 30%;
     color: black;
+    background-color: rgb(235, 226, 187);
+    border-radius: 20px;
 }
 
 .bio {
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     width: 100%;

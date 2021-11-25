@@ -4,28 +4,38 @@
 .lab {
     color: blue;
     position: absolute;
-    margin-top:-4vh;
+    margin-top:-4%;
 
 }
 
 .item-background {
     z-index: -1;
     position: absolute;
-    /* background-image: url("src/app/resources/accounting-image.jpg");
+    background-image: url("src/app/resources/farming.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.3; */
-    background-color: white;
-    border-top: 9px solid rgb(20, 48, 89);
-    border-radius: 5px;
+    opacity: 0.8;
+
+    /* blue: rgb(20, 48, 89); */
+    border-top: 9px solid #1c3892; 
+    border-radius: 20px;
     transition: 0.5s;
     width: 100%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
+.item-fade {
+    z-index: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.4;
+}
+
 h2 {
-    color: black;
     font-weight: bold;
 }
 
@@ -34,17 +44,19 @@ div.service-item:hover .item-background{
 }
 
 .item-layout {
-    padding: 5vh;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .item-header {
-    padding-top: 4vh;
-    padding-bottom: 5vh;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    color: white;
 }
 
 .item-body {
-    
+    color: white;
+    visibility: hidden;
 }
