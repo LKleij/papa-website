@@ -24,3 +24,9 @@ h2 {
     max-width: 700px;
     z-index: 1;
 }
+
+.blue-link {
+    color: blue;
+    /* font-weight: bold; */
+    text-decoration: underline;
+}

@@ -13,7 +13,7 @@
     opacity:  0.0;
     height: 100%;
 
-    background-color: #52ab98;
+    background-color: #ffffff;
 
     /* blue: rgb(20, 48, 89); */
     /* border-top: 9px solid #1c3892;  */
@@ -54,18 +54,18 @@ div.service-item:hover .item-fade {
 }
 
 .item-layout {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding-top: 7%;
+    padding-left: 6%;
 }
 
 .item-header {
-    padding-top: 4%;
-    padding-bottom: 5%;
-    color: black;
+    color: white;
 }
 
 .item-body {
-    color: black;
+    color: white;
 }

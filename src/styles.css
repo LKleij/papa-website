@@ -4,10 +4,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 html, body {
     width: 100%;
-    /* min-width: 750px !important; */
 }
+
 body {
     background-color: rgb(255, 255, 255);
     font-size: 18px;

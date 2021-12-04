@@ -1,29 +1,26 @@
-<div class="nav-top-wrapper-2" [class.anim]="!hideNav">
+<!-- <div class="nav-top-wrapper-2" [class.anim]="!hideNav">
+  <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
+    [style.max-width]="initialViewportSize.width + 'px'">
+    <app-top-navigation></app-top-navigation>
+  </div>
+</div> -->
+
+<!-- <div class="header-wrapper"> -->
+<div class="nav-top-wrapper" [style.height]="initialNavHeight + 'px'">
   <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
     [style.max-width]="initialViewportSize.width + 'px'">
     <app-top-navigation></app-top-navigation>
   </div>
 </div>
 
-<div class="header-wrapper">
-
-  <div class="nav-top-wrapper" [style.height]="initialNavHeight + 'px'">
-    <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
-      [style.max-width]="initialViewportSize.width + 'px'">
-      <app-top-navigation></app-top-navigation>
-    </div>
+<div class="header-background">
+  <div class="home-scroll" style="position: relative; top: -1000px;" #home></div>
+  <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
+    [style.max-width]="initialViewportSize.width + 'px'">
+    <app-header-main></app-header-main>
   </div>
-
-  <div class="header-background">
-    <div class="home-scroll" style="position: relative; top: -1000px;" #home></div>
-    <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
-      [style.max-width]="initialViewportSize.width + 'px'">
-      <app-header-main></app-header-main>
-    </div>
-  </div>
-
-  <div class="services-info"></div>
 </div>
+<!-- </div> -->
 
 <div class="services-header">
   <div class='content-size' [style.width]="currentViewportSize.width + 'px'"
@@ -33,12 +30,7 @@
   </div>
 </div>
 
-<div class="services">
-  <div class='content-size' [style.width]="currentViewportSize.width + 'px'"
-    [style.max-width]="initialViewportSize.width + 'px'">
-    <app-services></app-services>
-  </div>
-</div>
+
 
 <div class="aboutme">
   <div class='content-size' [style.width]="currentViewportSize.width + 'px'"

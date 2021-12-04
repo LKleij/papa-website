@@ -1,29 +1,5 @@
 
-
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:#d3d3d3;
-}
-
-.nav-top-wrapper {
-  display: flex;
-  justify-content: center;
-
-  width: 100%;
-  /* border-bottom: 2px solid black; */
-  background-color: white
-
-}
-
-.content-size {
-  
-  height: 100%;
-  background-color: white;
-}
-
-.nav-top-wrapper-2 {
+/* .nav-top-wrapper-2 {
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -37,18 +13,47 @@
   transition: all 0.5s;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10px;
-}
-
-.anim {
+} */
+/* .anim {
   height: 60px;
   pointer-events:all;
+} */
+/* 
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+
+  overflow-y: auto;
+  background-color:#d3d3d3;
+} */
+
+.content-size {
+  height: 100%;
+  margin: auto;
 }
 
+.nav-top-wrapper {
+  position: relative;
+  top: 0;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  overflow-y: auto;
+  z-index: 200;
+
+  width: 100%;
+  /* border-bottom: 2px solid black; */
+  background-color: white
+}
 
 .header-background {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
+
+  /* background-color: #0085ac; */
   
   /* background: linear-gradient(#21479b, #001570); */
   /* background-color: #31598e; */
@@ -57,9 +62,6 @@
   /* background-color: rgb(12, 0, 66); */
 }
 
-.services-info {
-  height: 100px;
-}
 .aboutme {
   display: flex;
   justify-content: center;
@@ -71,19 +73,13 @@
 .services-header {
   display: flex;
   justify-content: center;
+  padding-top: 10%;
 
   /* background-color: #F7FAFD; */
   width: 100%;
 }
 
-.services {
-  display: flex;
-  justify-content: center;
 
-  /* background-color: #F7FAFD; */
-  background: #ececec;
-  width: 100%;
-}
 
 
 .contactme {

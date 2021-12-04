@@ -27,7 +27,6 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1300px !important;
 
     height: 100%;
     width: 100%;
