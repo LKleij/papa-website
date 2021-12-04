@@ -1,10 +1,14 @@
-<div class="header-container" [style.width]="initialViewportSize.width+ 'px'">
-    <div class="header-content">
-        <div class="header-left">
-            <h1>This is a very important title that you will never forget</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, id beatae cumque obcaecati saepe in repellendus laudantium, libero repudiandae,
-                 illum eum? Excepturi, recusandae nihil deleniti cupiditate aspernatur qui sint! Recusandae!</p>
+<div class="header-wrapper">
+    <div class="header-image"></div>
+    <div class="header-fade"></div>
+    <div class="left-wrapper">
+        <div class="left-body" [style.padding-left]="globalPaddingLeftAndRight">
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic inventore mollitia culpa omni</h2>
         </div>
-        <div class="header-right"></div>
+    </div>
+    <div class="right-wrapper">
+        <div class="right-body" [style.padding-right]="globalPaddingLeftAndRight">
+            <app-contact-form></app-contact-form>
+        </div>
     </div>
 </div>

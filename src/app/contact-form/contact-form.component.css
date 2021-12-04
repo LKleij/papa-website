@@ -1,52 +1,61 @@
+* {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
 .contact-layout {
     display: flex;
     width: 100%;
     gap: 3%;
     /* rgb(147, 152, 228) */
-    justify-content: center;
-    background-color: #e67235;
-    border-radius: 20px;
-    padding-top: 10%;
+    background-color: white;
+    /* border-radius: 20px; */
     padding-bottom: 10%;
-    margin-top: 12%;
 }
 
-.service-list-header {
+.contactme-header {
+    display: flex;
+}
+
+.network-layout {
+    flex-grow: 1;
+}
+
+.contactme-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    padding-top: 7%;
 }
 
 .header-content {
-    width: 800px;
     text-align: center;
 }
 
 .form-layout {
-    flex-grow: 0;
-    width: 40%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-left: -5%;
-    padding: 5%;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.network-layout {
-    width: fit-content;
-    background-color: white;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    gap: 3vh;
+    margin: auto;
+    flex-grow: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     padding: 5%;
-    margin-right: -5%;
-    height: fit-content;
-    gap: 1%;
+    max-width: 500px;
+    background-color: rgba(48, 54, 148, 0.5);
+
+    color: white;
+    /* border-radius: 5px; */
 }
 
 .form-control {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .form-l {
     display: flex;
@@ -55,7 +64,7 @@
 
 .send-msg-btn {
     width:100%; 
-    background: linear-gradient(90deg, rgb(69, 60, 204), rgb(56, 219, 91)); 
+    background: #e85d0f;
     color:white; 
     font-weight: bold;
     border-radius: 100px;

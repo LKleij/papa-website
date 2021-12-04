@@ -1,0 +1,19 @@
+<div class="service-wrapper" [style.flex-direction]="direction">
+    <div class="text-wrapper">
+        <div class="text-body" [style.padding-left]="direction === 'row' ? globalPaddingLeftAndRight : '0px'"
+            [style.padding-right]="direction !== 'row' ? globalPaddingLeftAndRight : '0px'">
+            <h2>Serivce 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ducimus perspiciatis. Expedita quod
+                fugiat neque repudiandae culpa impedit nisi, animi vero fugit aspernatur dolorum ipsam minus obcaecati
+                hic
+                quae nulla!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat consequuntur incidunt, a tenetur
+                alias
+                illum ab vel impedit quae, esse eius, ullam sunt iusto corrupti aperiam ipsam? Incidunt, ab.</p>
+        </div>
+    </div>
+    <div class="image-wrapper" [style.padding-left]="direction !== 'row' ? globalPaddingLeftAndRight : '0px'"
+        [style.padding-right]="direction === 'row' ? globalPaddingLeftAndRight : '0px'">
+        <div class="image-img"></div>
+    </div>
+</div>

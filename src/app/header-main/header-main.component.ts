@@ -1,20 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { initialNavHeight, initialViewportSize } from '../app.constants';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { BehaviorSubject, Subscription } from 'rxjs';
+import { globalPaddingLeftAndRight, initialNavHeight, initialViewportSize } from '../app.constants';
 
 @Component({
   selector: 'app-header-main',
   templateUrl: './header-main.component.html',
   styleUrls: ['./header-main.component.css']
 })
-export class HeaderMainComponent implements OnInit {
-  initialViewportSize;
-  initialNavHeight;
+export class HeaderMainComponent implements OnInit, OnDestroy {
+  globalPaddingLeftAndRight = globalPaddingLeftAndRight;
   constructor() { }
 
   ngOnInit(): void {
-    this.initialNavHeight = initialNavHeight;
-    this.initialViewportSize = initialViewportSize;
-    console.log(initialViewportSize)
+    // this.devicePixelRatio.next(window.devicePixelRatio);
+  }
+
+  ngOnDestroy() {
   }
 
 }

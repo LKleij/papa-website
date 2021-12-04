@@ -1,41 +1,28 @@
-<div class="service-list-header">
-    <div class="header-content">
-        <h1>About me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis rerum culpa magni repellat! 
-            Temporibus vitae mollitia et error quibusdam praesentium asperiores in, debitis repellat, eius omnis rem quo totam.</p>
-    </div>
-</div>
-<div class="contact-layout">
-    <div class="form-layout">
-        <form [formGroup]="contactForm" class="form-l">
-
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Name" formControlName="name">
-              </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" formControlName="email">
-                <div *ngIf="email.dirty && email.invalid && email.value.length > 0" class="small pt-1" style="color: #dc3545;">
-                    Not a valid email.
-                </div>
-              </div>
-            <div class="mb-3">
-                <textarea class="form-control" placeholder="Your message" [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="8" formControlName="message"></textarea>
-                <div *ngIf="message.dirty && message.invalid && message.value.length > 0" class="small pt-1" style="color: #dc3545">
-                    Please write a longer message.
-                </div>
-            </div>
-            <button class="btn send-msg-btn">Send message</button>
-        </form>
-    </div>
-    <div class="network-layout">       
-        <div class="item-1">
-            <a>afsafas@gmail.com</a>
+<div class="form-layout">
+    <h2>Contact me</h2>
+    <form [formGroup]="contactForm" class="form-l">
+        <div class="mb-3" [style.display]="'flex'">
+            <input type="text" class="form-control" placeholder="Fist name" formControlName="firstName">
+            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
         </div>
-        <div class="item-2">
-            <a >+316238427</a>
+        <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email"
+                [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" formControlName="email">
+            <!-- <div *ngIf="email.dirty && email.invalid && email.value.length > 0" class="small pt-1"
+                style="color: #dc3545;">
+                Not a valid email.
+            </div> -->
         </div>
-        <div class="item-3">
-            <a >Linkedin</a>
+        <div class="mb-3">
+            <textarea class="form-control" placeholder="Your message"
+                [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="8"
+                formControlName="message"></textarea>
+            <!-- <div *ngIf="message.dirty && message.invalid && message.value.length > 0" class="small pt-1"
+                style="color: #dc3545">
+                Please write a longer message.
+            </div> -->
         </div>
-    </div>
+        <button class="btn send-msg-btn">Send message</button>
+    </form>
+    <h5>Or message me via *arno@gmail.com *Linkedin</h5>
 </div>

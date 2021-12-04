@@ -1,23 +1,26 @@
+h4 {
+    color: #3c38e5;
+    font-weight: bold;
+}
+
+h2 {
+    /* font-weight: bold; */
+}
+
 .service-list {
     display: flex;
-    gap: 5%;
-    padding-top: 12%;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.services-content {
+    height: 100%;
 }
 
 .service-item-container {
-    flex-grow: 1;
+    flex: 1 0;
     position:relative;
+    max-width: 700px;
     z-index: 1;
-    flex-basis: 0;
-}
-
-.service-list-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-content {
-    width: 800px;
-    text-align: center;
 }

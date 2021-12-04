@@ -1,27 +1,121 @@
 
-.page-wrapper {
-  width: 100%;
-  height: 100%;
-}
 
 .header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#d3d3d3;
 }
 
 .nav-top-wrapper {
-  width: 100%;
-  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  /* border-bottom: 2px solid black; */
+  background-color: white
+
 }
 
-
-.header-content-wrapper {
+.content-size {
+  
   height: 100%;
-  width: 100%;
-  background-color: rgb(0, 0, 66);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
 }
+
+.nav-top-wrapper-2 {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  overflow: hidden;
+
+  height: 0px;
+  width: 100%;
+
+  pointer-events: none;
+  transition: all 0.5s;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10px;
+}
+
+.anim {
+  height: 60px;
+  pointer-events:all;
+}
+
+
+.header-background {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  /* background: linear-gradient(#21479b, #001570); */
+  /* background-color: #31598e; */
+
+  /* background-color: #24303E; */
+  /* background-color: rgb(12, 0, 66); */
+}
+
+.services-info {
+  height: 100px;
+}
+.aboutme {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+.services-header {
+  display: flex;
+  justify-content: center;
+
+  /* background-color: #F7FAFD; */
+  width: 100%;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+
+  /* background-color: #F7FAFD; */
+  background: #ececec;
+  width: 100%;
+}
+
+
+.contactme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.blue {
+  color:  #0085ac;
+}
+
+/* 
+.wave {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    fill: white;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(188% + 1.3px);
+    height: 200px;
+    fill: white;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+} */

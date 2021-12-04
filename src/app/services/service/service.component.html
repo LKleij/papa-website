@@ -3,10 +3,12 @@
     <div class="item-fade"></div>
     <div class="item-layout">
         <div class="item-header">
-            <h2><ng-content select="[itemTitle]"></ng-content></h2>
+            <h2>
+                <ng-content select="[itemTitle]"></ng-content>
+            </h2>
         </div>
         <div class="item-body">
             <ng-content select="[itemText]" class="body-placeholder"></ng-content>
         </div>
-    </div>  
-</div>  
+    </div>
+</div>

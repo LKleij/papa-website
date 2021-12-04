@@ -13,7 +13,7 @@ export class HomepageComponent implements OnInit {
   }
 
   directTo() {
-    document.getElementsByClassName('contactme-view')[0].scrollIntoView({behavior: 'smooth', block: 'start' });
+    document.getElementsByClassName('contactme-view')[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   }
 

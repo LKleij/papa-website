@@ -1,11 +1,15 @@
-<div class="nav-container" [style.width]="initialViewportSize.width + 'px'" [style.height]="initialNavHeight + 'px'">
-    <div class="nav-logo">
-        <div class="logo"></div>
+<div class="nav-container" [style.padding-left]="globalPaddingLeftAndRight"
+    [style.padding-right]="globalPaddingLeftAndRight">
+    <div class="logo" [style.left]="globalPaddingLeftAndRight">
+        LOGO
     </div>
-    <div class="nav-content">
-        <a class="nav-item-style" (click)="scroll('home-scroll')" href="javascript:void(0)" >Home</a>
-        <a class="nav-item-style" (click)="scroll('services-scroll')" href="javascript:void(0)">Services</a>
-        <a class="nav-item-style" (click)="scroll('aboutme-scroll')" href="javascript:void(0)">About me</a>
-        <a class="nav-item-style" (click)="scroll('contactme-scroll')" href="javascript:void(0)">Contact</a>
+    <div class="item-b" (click)="scroll('home-scroll')" [class.active-bg]="isInFrameD.home">
+        <a class="nav-item-style" [class.active-text]="isInFrameD.home">Home</a>
     </div>
-</div>  
+    <div class="item-b" (click)="scroll('services-scroll')" [class.active-bg]="isInFrameD.services">
+        <a class="nav-item-style" [class.active-text]="isInFrameD.services">Services</a>
+    </div>
+    <div class="item-b" (click)="scroll('aboutme-scroll')" [class.active-bg]="isInFrameD.aboutme">
+        <a class="nav-item-style" [class.active-text]="isInFrameD.aboutme">About me</a>
+    </div>
+</div>
