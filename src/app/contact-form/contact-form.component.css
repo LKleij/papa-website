@@ -61,18 +61,6 @@ button:hover {
     color:white; 
 }
 
-.fa-linkedin-square {
-    color: #0a66c2;
-    align-self: center;
-}
-
-.fa { transform: scale(1.5,1.5); }
-
-/* .fa::after {
-    content: "LinkedIn";
-    color: black;
-} */
-
 .lin {
     color: #0a66c2;
     text-decoration: none;
@@ -95,7 +83,14 @@ a {
 
 img {
     display: inline;
-    height: 40px;
+    height: 22px;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 4px;
+}
+
+.emailref {
+    margin-left: 3px;
 }
 
 @media screen and (max-width: 880px) {
