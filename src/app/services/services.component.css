@@ -9,7 +9,6 @@ h2 {
 
 .service-list {
     display: flex;
-    flex-wrap:wrap;
     width: 100%;
     justify-content: center;
 }
@@ -23,12 +22,17 @@ h2 {
 .service-item-container {
     flex: 1 0;
     position:relative;
-    max-width: 700px;
     z-index: 1;
 }
 
 .blue-link {
     color: blue;
-    /* font-weight: bold; */
-    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 880px) {
+    .service-list {
+        flex-direction: column;
+    }
+
 }

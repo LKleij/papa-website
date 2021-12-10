@@ -2,10 +2,9 @@
     position: relative;
     /* margin-left: 2%; */
     /* margin-right: 2%; */
-
     display: flex;
-    flex-wrap: wrap;
 }
+
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -27,8 +26,6 @@ h1::before {
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* background-color: rgb(23, 0, 104); */
-
     opacity: 1.0;
 }
 
@@ -45,15 +42,16 @@ h1::before {
     z-index: 1;
     flex: 1 1 50%;
     padding-left: 11%;
-
+    margin: 4% 0;
 }
 
 .right-wrapper {
     z-index: 1;
     flex: 1 1 50%;
     margin: 4% 0;
-
 }
+
+
 
 .body-left {
     height: 100%;
@@ -78,4 +76,26 @@ h1::before {
     align-items: center;
     color: white;
     padding-right: 3%;
+}
+
+
+@media screen and (max-width: 880px) {
+    .header-wrapper {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .left-wrapper {
+        padding: 15vh 8vw;
+    }
+
+    .right-wrapper {
+        margin: 0;
+    }
+
+    .body-right {
+        padding: 0;
+        justify-content: stretch;
+        align-items: stretch;
+    }
 }
