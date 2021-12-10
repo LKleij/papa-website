@@ -1,53 +1,20 @@
-.nav-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.navbar-style {
+  padding: 0 2%;
   height: 100%;
-  margin-right: 50px;
-  margin-left: 50px;
-  gap: 5%;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff ;
 }
+
+.nav-link{
+  cursor: pointer;
+  color: black !important;
+  text-decoration: none;
+  
+  transition: all 0.3s ease;
+}
+
 
 .active-text {
-  color: #0085ac;
+  color: #0085ac !important;
   /* color: #45DABE; */
-}
-
-.active-bg {
-  /* background-color: rgb(243, 243, 243); */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  width: 220px;
-  height: 54px;
-  background-color: rgb(255, 255, 255, 0.0);
-  color: black;
-  font-weight: bold;
-}
-
-.item-b {
-  padding-left: 1%;
-  padding-right: 1%;
-  display: flex;
-  align-items: center;
-  height: 100%;
-
-  transition: all 0.3s ease;
-}
-
-a {
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
-
-  transition: all 0.3s ease;
 }
 
 

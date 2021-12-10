@@ -7,12 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  @Input("imageUrl") imageUrl: string;
-   
+  @Input("last-hovered") lastHovered: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.imageUrl)
+    console.log(this.lastHovered)
+    console.log(this.lastHovered ? 0.6 : 0.0)
   }
 
 }

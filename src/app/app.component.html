@@ -5,38 +5,36 @@
   </div>
 </div> -->
 
-<!-- <div class="header-wrapper"> -->
-<div class="nav-top-wrapper" [style.height]="initialNavHeight + 'px'">
-  <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
-    [style.max-width]="initialViewportSize.width + 'px'">
+<div class="nav-top-container" [style.height]="initialNavHeight + 'px'">
+  <div class="nav-top-wrapper">
     <app-top-navigation></app-top-navigation>
   </div>
 </div>
 
-<div class="header-background">
+<div class="header-container">
   <div class="home-scroll" style="position: relative; top: -1000px;" #home></div>
-  <div class="content-size" [style.width]="currentViewportSize.width + 'px'"
-    [style.max-width]="initialViewportSize.width + 'px'">
+  <div class="header-wrapper" [style.width]="currentViewportSize.width">
     <app-header-main></app-header-main>
   </div>
 </div>
-<!-- </div> -->
 
-<div class="services-header">
-  <div class='content-size' [style.width]="currentViewportSize.width + 'px'"
-    [style.max-width]="initialViewportSize.width + 'px'">
-    <div class="services-scroll" style="position: relative; top: 0px;"></div>
-    <app-services2></app-services2>
+<div class="services-header-container">
+  <div class='services-header-wrapper' [style.width]="currentViewportSize.width">
+    <app-services></app-services>
   </div>
 </div>
 
+<div class="services-container">
+  <div class="services-scroll" style="position: relative; top: 0px;"></div>
+  <div class='services-wrapper' [style.width]="currentViewportSize.width">
+    <!-- <app-services2></app-services2> -->
+  </div>
+</div>
 
-
-<div class="aboutme">
-  <div class='content-size' [style.width]="currentViewportSize.width + 'px'"
-    [style.max-width]="initialViewportSize.width + 'px'">
-    <div class="aboutme-scroll" style="position: relative; top: 0px;"></div>
-    <app-about-me></app-about-me>
+<div class="aboutme-container">
+  <div class="aboutme-scroll" style="position: relative; top: 0px;"></div>
+  <div class='aboutme-wrapper' [style.width]="currentViewportSize.width">
+    <!-- <app-about-me></app-about-me> -->
   </div>
 </div>
 

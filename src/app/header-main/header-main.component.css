@@ -1,70 +1,21 @@
 .header-wrapper {
-    margin-left: 2%;
-    margin-right: 2%;
+    position: relative;
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
+
+    display: flex;
+    flex-wrap: wrap;
 }
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 h1::before {
     content: "Lorem ipsum";
-    color:#e85d0f;
+    color:#00fd9cc4;
+    /* blue: #00cafd; */
 }
-
-.left-right {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    height: 700px;
-}
-.content-size {
-    width: 100%;
-    height: 100%;
-    background-color: #e85d0f;
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    /* background-color: #F7FAFD; */
-    background: #ececec0c;
-    width: 100%;
-  }
-
-  .left-right2 {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-left: 11%;
-    margin-right: 11%;
-}
-
-.left-s {
-    margin-top: -50px;
-    /* background-color: rgb(100, 87, 72); */
-    min-width: 660px;
-    flex: 1 1 50%;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10px; */
-}
-
-.right-s {
-    margin-top: -300px;
-    flex: 1 1 auto;
-}
-
-@media screen and (max-width: 1050px) {
-    .left-s {
-        margin-top: 0px;
-    }
-    .right-s {
-        margin-top: 0px;
-    }
-    .left-right2 {
-        flex-wrap: wrap-reverse;
-    }
-  }
 
 .header-image {
     z-index: 0;
@@ -92,23 +43,34 @@ h1::before {
 
 .left-wrapper {
     z-index: 1;
-    flex: 1 1 60%;
-    min-width: 400px !important;
-    max-width: 1000px !important;
-    padding-left: 12%;
+    flex: 1 1 50%;
+    padding-left: 11%;
 
 }
 
 .right-wrapper {
     z-index: 1;
-    flex: 1 1 40%;
+    flex: 1 1 50%;
+    margin: 4% 0;
 
 }
 
-.left-body {
+.body-left {
     height: 100%;
     width: 100%;
     max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-right: 3%;
+}
+
+.body-right {
+    height: 100%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;

@@ -1,5 +1,5 @@
 <div class="form-layout">
-    <h2>Contact me</h2>
+    <h2>Contact Me</h2>
     <form [formGroup]="contactForm" class="form-l">
         <div class="mb-3" [style.display]="'flex'" style="gap: 3%;">
             <input type="text" class="form-control" placeholder="Fist name" formControlName="firstName">
@@ -8,19 +8,11 @@
         <div class="mb-3">
             <input type="email" class="form-control" placeholder="Email"
                 [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" formControlName="email">
-            <!-- <div *ngIf="email.dirty && email.invalid && email.value.length > 0" class="small pt-1"
-                style="color: #dc3545;">
-                Not a valid email.
-            </div> -->
         </div>
         <div class="mb-3">
             <textarea class="form-control" placeholder="Your message"
-                [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="8"
+                [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="6"
                 formControlName="message"></textarea>
-            <!-- <div *ngIf="message.dirty && message.invalid && message.value.length > 0" class="small pt-1"
-                style="color: #dc3545">
-                Please write a longer message.
-            </div> -->
         </div>
         <button class="btn send-msg-btn">Send message</button>
     </form>

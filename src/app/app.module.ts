@@ -12,6 +12,7 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
 import { HeaderMainComponent } from './header-main/header-main.component';
 import { Services2Component } from './services2/services2.component';
 import { Service2Component } from './services2/service2/service2.component';
+import { ServicesHeaderComponent } from './services-header/services-header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Service2Component } from './services2/service2/service2.component';
     TopNavigationComponent,
     HeaderMainComponent,
     Services2Component,
-    Service2Component
+    Service2Component,
+    ServicesHeaderComponent
   ],
   imports: [
     BrowserModule,

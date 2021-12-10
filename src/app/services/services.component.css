@@ -16,6 +16,8 @@ h2 {
 
 .services-content {
     height: 100%;
+    margin: 0 2%;
+    margin-top: 0.5%;
 }
 
 .service-item-container {

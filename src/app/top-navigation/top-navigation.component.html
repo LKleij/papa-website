@@ -1,15 +1,24 @@
-<div class="nav-container" [style.padding-left]="globalPaddingLeftAndRight"
-    [style.padding-right]="globalPaddingLeftAndRight">
-    <div class="logo" [style.left]="globalPaddingLeftAndRight">
-        LOGO
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid navbar-style">
+        <a class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item pe-4" (click)="scroll('home-scroll')">
+                    <a class="nav-link" [class.active-text]="isInFrameD.home">Home</a>
+                </li>
+                <li class=" nav-item pe-4" (click)="scroll('services-scroll')">
+                    <a class="nav-link" [class.active-text]="isInFrameD.services">Services</a>
+                </li>
+                <li class="nav-item" (click)="scroll('aboutme-scroll')">
+                    <a class="nav-link" [class.active-text]="isInFrameD.aboutme">About me</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="item-b" (click)="scroll('home-scroll')" [class.active-bg]="isInFrameD.home">
-        <a class="nav-item-style" [class.active-text]="isInFrameD.home">Home</a>
-    </div>
-    <div class="item-b" (click)="scroll('services-scroll')" [class.active-bg]="isInFrameD.services">
-        <a class="nav-item-style" [class.active-text]="isInFrameD.services">Services</a>
-    </div>
-    <div class="item-b" (click)="scroll('aboutme-scroll')" [class.active-bg]="isInFrameD.aboutme">
-        <a class="nav-item-style" [class.active-text]="isInFrameD.aboutme">About me</a>
-    </div>
-</div>
+</nav>

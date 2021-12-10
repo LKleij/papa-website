@@ -1,11 +1,13 @@
 <div class="service-item">
-    <div class="item-background"></div>
+    <div class="item-background" [style.opacity]="lastHovered ? 0.6 : 0.0"></div>
     <div class="item-fade"></div>
     <div class="item-layout">
         <div class="item-header">
             <h2>
                 <ng-content select="[itemTitle]"></ng-content>
             </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, ex magnam quod expedita quo animi!
+            </p>
         </div>
         <div class="item-body">
             <ng-content select="[itemText]" class="body-placeholder"></ng-content>

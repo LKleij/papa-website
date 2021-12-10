@@ -1,19 +1,22 @@
-<div class="header-wrapper">
-    <div class="left-right">
-        <div class="header-image"></div>
-        <div class="header-fade"></div>
+<header class="header-wrapper">
+    <div class="header-image"></div>
+    <div class="header-fade"></div>
 
-        <div class="left-wrapper">
-            <div class="left-body" [style.padding-left]="globalPaddingLeftAndRight">
-                <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatibus aspernatur
-                    officia quas
-                    veritatis possimus ex, obcaecati, doloribus quae molestiae commodi temporibus maxime.</p>
-            </div>
-        </div>
+    <div class="left-wrapper">
+        <section class="body-left">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatibus aspernatur
+                officia quas
+                veritatis possimus ex, obcaecati, doloribus quae molestiae commodi temporibus maxime.</p>
+        </section>
+    </div>
+    <div class="right-wrapper">
+        <section class="body-right">
+            <app-contact-form></app-contact-form>
+        </section>
     </div>
 
-    <div class="left-right2">
+    <!-- <div class="left-right2">
         <div class="left-s">
             <div class="services">
                 <div class='content-size'>
@@ -23,8 +26,7 @@
         </div>
         <div class="right-s">
             <div class="right-body">
-                <app-contact-form></app-contact-form>
             </div>
         </div>
-    </div>
-</div>
+    </div> -->
+</header>

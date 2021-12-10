@@ -2,14 +2,14 @@
     [style.padding-left]="globalPaddingLeftAndRight">
 
     <div class="service-list">
-        <app-service class="service-item-container" imageUrl="src/app/resources/farming.jpg">
+        <app-service id="service1" class="service-item-container" [last-hovered]="currentHover.service1">
             <ng-container itemTitle>Verslagen</ng-container>
 
             <ng-container itemText>
                 <p class="blue-link">Learn more</p>
             </ng-container>
         </app-service>
-        <app-service class="service-item-container">
+        <app-service id="service2" class="service-item-container" [last-hovered]="currentHover.service2">
             <ng-container itemTitle>Financiën</ng-container>
 
             <ng-container itemText>
@@ -17,7 +17,7 @@
             </ng-container>
         </app-service>
 
-        <app-service class="service-item-container">
+        <app-service id="service3" class="service-item-container" [last-hovered]="currentHover.service3">
             <ng-container itemTitle>Excel dashboards</ng-container>
 
             <ng-container itemText>

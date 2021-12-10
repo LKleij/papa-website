@@ -2,40 +2,7 @@
     
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-}
-
-.contact-layout {
-    display: flex;
-    width: 100%;
-    gap: 3%;
-    /* rgb(147, 152, 228) */
-    background-color: white;
-    /* border-radius: 20px; */
-    padding-bottom: 10%;
-}
-
-.contactme-header {
-    display: flex;
-}
-
-.network-layout {
-    flex-grow: 1;
-}
-
-.contactme-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
-
-    padding-top: 7%;
-}
-
-.header-content {
-    text-align: center;
+    margin: 0;
 }
 
 .form-layout {
@@ -45,13 +12,12 @@
     align-items: center;
     gap: 3vh;
     flex-grow: 1;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     padding: 5%;
     /* max-width: 500px; */
     background-color: white;
 
     color: black;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10px;
+    /* box-shadow: rgba(153, 153, 153, 0.8) 0px 3px 10px; */
     /* border-radius: 5px; */
 }
 
