@@ -51,6 +51,9 @@ button:focus {
     box-shadow: none;
 }
 
+.is-invalid {
+    border: 2px solid #dc3545;
+}
 
 button:hover {
 
@@ -58,6 +61,42 @@ button:hover {
     color:white; 
 }
 
+.fa-linkedin-square {
+    color: #0a66c2;
+    align-self: center;
+}
+
+.fa { transform: scale(1.5,1.5); }
+
+/* .fa::after {
+    content: "LinkedIn";
+    color: black;
+} */
+
+.lin {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lin::after {
+    content: "in";
+    color: white;
+    background-color: #0a66c2;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0px 2px;
+    margin-left: 2px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: inline;
+    height: 40px;
+}
 
 @media screen and (max-width: 880px) {
 

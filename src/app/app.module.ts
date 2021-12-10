@@ -13,6 +13,7 @@ import { HeaderMainComponent } from './header-main/header-main.component';
 import { Services2Component } from './services2/services2.component';
 import { Service2Component } from './services2/service2/service2.component';
 import { ServicesHeaderComponent } from './services-header/services-header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ServicesHeaderComponent } from './services-header/services-header.compo
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

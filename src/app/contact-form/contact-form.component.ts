@@ -10,6 +10,10 @@ import { globalPaddingLeftAndRight } from '../app.constants';
 export class ContactFormComponent implements OnInit {
   globalPaddingLeftAndRight = globalPaddingLeftAndRight;
   contactForm: FormGroup;
+
+  emailFocus = false
+  messageFocus = false
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
@@ -30,7 +34,18 @@ export class ContactFormComponent implements OnInit {
         Validators.minLength(10)
       ]]
     });
+
+    document.getElementById('email').addEventListener('focusin', () => this.emailFocus = true);
+    document.getElementById('email').addEventListener('focusout', () => this.emailFocus = false);
+
+
+    document.getElementById('message').addEventListener('focusin', () => this.messageFocus = true);
+    document.getElementById('message').addEventListener('focusout', () => this.messageFocus = false);
+
+
   }
+
+
 
   get email() {
     return this.contactForm.get('email');

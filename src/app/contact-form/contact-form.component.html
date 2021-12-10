@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 <div class="form-layout">
     <h2>Contact Me</h2>
     <form [formGroup]="contactForm" class="form-l">
@@ -6,19 +8,28 @@
             <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email"
-                [class.is-invalid]="email.dirty && email.invalid && email.value.length > 0" formControlName="email">
+            <input type="email" id="email" class="form-control" placeholder="Email"
+                [class.is-invalid]="email.invalid && email.value.length > 0 && !emailFocus" formControlName="email">
         </div>
-        <div class="mb-3">
-            <textarea class="form-control" placeholder="Your message"
-                [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0" rows="6"
-                formControlName="message"></textarea>
+        <div class="mb-1">
+            <textarea class="form-control" id="message" placeholder="Your message"
+                [class.is-invalid]="message.dirty && message.invalid && message.value.length > 0 && !messageFocus"
+                rows="6" formControlName="message"></textarea>
+            <small *ngIf="message.dirty && message.invalid && message.value.length > 0 && !messageFocus"
+                style="color: #dc3545;">Please write a
+                longer message</small>
+            <small><span>&nbsp;</span></small>
         </div>
         <button class="btn send-msg-btn">Send message</button>
     </form>
     <div [style.display]="'flex'" style="gap: 1%; width: 100%; justify-content: center;">
-        <p>Or message via</p>
-        <a style="color:blue; text-decoration: underline;">arno@gmail.com</a>
-        <a style="color:blue; text-decoration: underline;">Linkedin</a>
+        <p>Or message me via <img src="../../assets/gmail-logo.png" alt="">
+            <a style="color:#0a66c2; font-weight: bold;" href="mailto: arno@gmail.com">arno@gmail.com</a>
+            <span> or </span>
+            <a style="text-decoration: none;" href="https://nl.linkedin.com/in/arno-van-der-kleij-7ab27113"
+                target="_blank">
+                <!-- <i class="fa fa-linkedin-square"></i> --> <span class="lin">Linked</span>
+            </a>
+        </p>
     </div>
 </div>
