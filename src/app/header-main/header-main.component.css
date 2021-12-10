@@ -12,7 +12,7 @@ h1 {
 
 h1::before {
     content: "Lorem ipsum";
-    color:#00fd9cc4;
+    color:#00fd9cd8;
     /* blue: #00cafd; */
 }
 
@@ -82,7 +82,6 @@ h1::before {
 @media screen and (max-width: 880px) {
     .header-wrapper {
         flex-direction: column;
-        margin-bottom: 50px;
     }
 
     .left-wrapper {

@@ -26,7 +26,6 @@
 
 .services-header-container {
   background-color: yellow;
-  height: 500px;
 
 }
 .services-container {
@@ -53,8 +52,20 @@
 
 }
 
+.services-header-wrapper {
+  background-color: white;
+}
+
 .aboutme-wrapper {
 
+}
+
+
+
+@media screen and (max-width: 880px) {
+  .services-header-wrapper {
+      background-color: #24303E;
+  }
 }
 
 

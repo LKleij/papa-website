@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 h4 {
     color: #3c38e5;
     font-weight: bold;
@@ -11,12 +14,12 @@ h2 {
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: #3c38e5;
 }
 
 .services-content {
     height: 100%;
     margin: 0 2%;
-    margin-top: 0.5%;
 }
 
 .service-item-container {
@@ -26,13 +29,18 @@ h2 {
 }
 
 .blue-link {
-    color: blue;
+    color: rgb(0, 153, 255);
+    font-weight: bold;
 }
 
 
 @media screen and (max-width: 880px) {
     .service-list {
         flex-direction: column;
+    }
+
+    .services-content {
+        margin: 0 ;
     }
 
 }
