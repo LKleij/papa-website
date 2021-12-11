@@ -13,13 +13,18 @@ export class HeaderMainComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // this.devicePixelRatio.next(window.devicePixelRatio);
+
+    // document.getElementById('one').
   }
 
   ngOnDestroy() {
   }
 
   onScroll() {
-    document.getElementById('services-header-scroll').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    let elem = document.getElementById('services-header-scroll');
+    elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+
   }
 
 }

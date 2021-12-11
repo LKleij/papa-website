@@ -94,7 +94,8 @@ h1::before {
     }
 
     .left-wrapper {
-        padding: 15vh 8vw;
+        padding: 20% 8vw;
+        margin: 0;
     }
 
     .right-wrapper {
@@ -105,6 +106,10 @@ h1::before {
         padding: 0;
         justify-content: stretch;
         align-items: stretch;
+    }
+
+    .body-left {
+      padding: 0;
     }
     
     #one {
@@ -123,7 +128,7 @@ h1::before {
     width: 80px;
     height: 100px;
     position: absolute;
-    bottom: 0%;
+    bottom: 2%;
     left: 50%;
     transform: translate(-50%, 0%) rotateZ(0deg);
   }
@@ -163,13 +168,115 @@ h1::before {
   .arrow:nth-child(1) {
     opacity: 0.3;
     top: 35%;
+
+    -webkit-animation: fadeinThird 0.7s; /* Safari, Chrome and Opera > 11.1 */
+    -moz-animation: fadeinThird 0.7s; /* Firefox < 16 */
+     -ms-animation: fadeinThird 0.7s; /* Internet Explorer */
+      -o-animation: fadeinThird 0.7s; /* Opera < 11.1 */
+         animation: fadeinThird 0.7s;
   }
   .arrow:nth-child(2) {
     opacity: 0.6;
     top: 55%;
+    -webkit-animation: fadeinSix 1.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinSix 1.2s; /* Firefox < 16 */
+     -ms-animation: fadeinSix 1.2s; /* Internet Explorer */
+      -o-animation: fadeinSix 1.2s; /* Opera < 12.1 */
+         animation: fadeinSix 1.2s;
   }
   .arrow:nth-child(3) {
     opacity: 0.9;
     top: 75%;
+
+    -webkit-animation: fadeinFull 2.1s; /* Safari, Chrome and Opera > 13.1 */
+    -moz-animation: fadeinFull 2.1s; /* Firefox < 13 */
+     -ms-animation: fadeinFull 2.1s; /* Internet Explorer */
+      -o-animation: fadeinFull 2.1s; /* Opera < 13.1 */
+         animation: fadeinFull 2.1s;
   }
-  
+
+
+
+.reset {
+  pointer-events: none;
+}
+
+@keyframes fadeinThird {
+    0% { opacity: 0; }
+    100%   { opacity: 0.3; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinThird {
+    0% { opacity: 0; }
+    100%   { opacity: 0.3; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinThird {
+    0% { opacity: 0; }
+    100%   { opacity: 0.3; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinThird {
+    0% { opacity: 0; }
+    100%   { opacity: 0.3; }
+}
+
+
+@keyframes fadeinSix {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  100%   { opacity: 0.6; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinSix {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  100%   { opacity: 0.6; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinSix {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  100%   { opacity: 0.6; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinSix {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  100%   { opacity: 0.6; }
+}
+
+
+
+@keyframes fadeinFull {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100%   { opacity: 0.9; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinFull {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100%   { opacity: 0.9; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinFull {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100%   { opacity: 0.9; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinFull {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100%   { opacity: 0.9; }
+}
