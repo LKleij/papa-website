@@ -11,10 +11,13 @@
   transition: all 0.3s ease;
 }
 
-
 .active-text {
   color: #0085ac !important;
   /* color: #45DABE; */
+}
+
+.nav-nav {
+  height: 100%;
 }
 
 

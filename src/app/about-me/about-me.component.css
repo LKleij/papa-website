@@ -1,56 +1,45 @@
-h2 {
-    color: black;
-    font-weight: bold;
+h1 {
+
+    color: #262d3d;
+    font-size: 44px;
+    line-height: 56px;
 }
 
+p {
+    color: #455065;
+    line-height: 1.5;
+    font-size: 20px;
 
-
-img {
-    z-index: 1;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: white;
-    width: fit-content;
 }
-.aboutme-header {
+
+.aboutme-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-content {
-    text-align: center;
-}
-
-.mmm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
     width: 100%;
-
-    padding-bottom: 5%;
-    
-    color: black;
+    column-gap: 5%;
+    background-color: #d2d6e2;
 }
 
+.left {
+    flex: 1 1 50%;
+    padding: 5%;
+    padding-bottom: 4%;
 
-.thisIsme {
-    flex: 0 0 40%;
+}
+
+.right {
+    position: relative;
+    flex: 1 1 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.bio-summary {
-    
-
 }
 
-.bio {
-    margin-top: 4%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.title {
+    margin-bottom: 5%;
+    max-width: 600px;
+}
+
+.profile-pic {
+    /* position: absolute; */
+    /* background-color: beige; */
+    justify-self: center;
+    align-self: center;
 }

@@ -6,21 +6,24 @@ h4 {
     font-weight: bold;
 }
 
-h2 {
-    /* font-weight: bold; */
+
+h1 {
+  font-size: 20px;
+  color: #0085ac;
+  font-weight: bold;
 }
+
 
 .service-list {
     display: flex;
     width: 100%;
     justify-content: center;
     background-color: #3c38e5;
-    margin-top: 5%;
 }
 
 .services-content {
     height: 100%;
-    margin: 0 2%;
+    margin: 0 calc(10vw - 30px);
 }
 
 .service-item-container {
@@ -34,13 +37,23 @@ h2 {
     font-weight: bold;
 }
 
+.title {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 880px) {
     .service-list {
         flex-direction: column;
     }
 
     .services-content {
-        margin: 0 ;
+        margin-left: 0 ;
+        margin-right: 0;
+    }
+
+    .title {
+      padding-left: 8vw;
     }
 
 }
