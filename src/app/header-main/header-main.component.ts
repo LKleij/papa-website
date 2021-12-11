@@ -18,4 +18,8 @@ export class HeaderMainComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
   }
 
+  onScroll() {
+    document.getElementById('services-header-scroll').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
 }

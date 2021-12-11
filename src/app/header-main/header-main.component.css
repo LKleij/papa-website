@@ -3,7 +3,9 @@
     /* margin-left: 2%; */
     /* margin-right: 2%; */
     display: flex;
+    column-gap: 5%;
 }
+
 
 h1 {
     font-size: 50px;
@@ -39,6 +41,7 @@ h1::before {
 }
 
 .left-wrapper {
+    position: relative;
     z-index: 1;
     flex: 1 1 50%;
     padding-left: 11%;
@@ -51,12 +54,17 @@ h1::before {
     margin: 4% 0;
 }
 
+#one {
+    display: none;
+}
+
+
+
 
 
 .body-left {
     height: 100%;
     width: 100%;
-    max-width: 700px;
 
     display: flex;
     flex-direction: column;
@@ -76,6 +84,7 @@ h1::before {
     align-items: center;
     color: white;
     padding-right: 3%;
+    padding-left: 3%;
 }
 
 
@@ -97,4 +106,70 @@ h1::before {
         justify-content: stretch;
         align-items: stretch;
     }
+    
+    #one {
+        display:inline;
+    }
+    #two {
+        display: none;
+    }
 }
+
+
+
+.arrow-container {
+    z-index: 50;
+    display: block;
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%) rotateZ(0deg);
+  }
+  .arrow-container:hover {
+    cursor: pointer;
+  }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transition: all 0.4s ease;
+  }
+  .arrow:before, .arrow:after {
+    transition: all 0.4s ease;
+    content: "";
+    position: absolute;
+    transform-origin: bottom right;
+    background: #fff;
+    width: 4px;
+    height: 30px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: 35%;
+  }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: 55%;
+  }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: 75%;
+  }
+  
