@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { BehaviorSubject, Subscription } from 'rxjs';
-import { globalPaddingLeftAndRight, initialNavHeight, initialViewportSize } from '../app.constants';
+import { pageMargins } from '../app.constants';
 
 @Component({
   selector: 'app-header-main',
@@ -8,13 +7,11 @@ import { globalPaddingLeftAndRight, initialNavHeight, initialViewportSize } from
   styleUrls: ['./header-main.component.css']
 })
 export class HeaderMainComponent implements OnInit, OnDestroy {
-  globalPaddingLeftAndRight = globalPaddingLeftAndRight;
+  currentMargin = pageMargins;
+
   constructor() { }
 
   ngOnInit(): void {
-    // this.devicePixelRatio.next(window.devicePixelRatio);
-
-    // document.getElementById('one').
   }
 
   ngOnDestroy() {
@@ -23,8 +20,6 @@ export class HeaderMainComponent implements OnInit, OnDestroy {
   onScroll() {
     let elem = document.getElementById('services-header-scroll');
     elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-
   }
 
 }

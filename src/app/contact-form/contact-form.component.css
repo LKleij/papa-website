@@ -19,7 +19,9 @@ input:-webkit-autofill:active {
     align-items: center;
     gap: 40px;
     padding: 5%;
+    width: 100%;
     background-color: #F8F9FA;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     color: black;
 }
@@ -32,6 +34,7 @@ input:-webkit-autofill:active {
 .form-l {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .send-msg-btn {
