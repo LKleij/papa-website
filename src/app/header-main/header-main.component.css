@@ -171,20 +171,19 @@ button:focus {
   }
 
   .left-wrapper {
-    flex: 1 1 70vh;
-    width: 100vw;
+    flex: 0 0 600px;
     padding: 0;
     margin: 0;
   }
 
   .body-left {
     margin: 0 5%;
-    height: 70vh;
+    height: 600px;
   }
 
   .right-wrapper {
 
-    flex: 1 1 70vh;
+    flex: 0 0 600px;
     padding: 0;
     margin: 0;
   }
