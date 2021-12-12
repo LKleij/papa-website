@@ -33,21 +33,18 @@ h1 {
   display: none;
 }
 
-.left-wrapper {
-    position: relative;
-    z-index: 1;
-    flex: 0 1 50%;
+.left-wrapper, .right-wrapper {
+  position: relative;
+  z-index: 1;
+  flex: 0 1 50%;
+  margin: 4% 0;
+}
 
-    margin: 4% 0;
+.left-wrapper {
     margin-left: 16vw;
 }
 
 .right-wrapper {
-    position: relative;
-    z-index: 1;
-    flex: 0 1 50%;
-
-    margin: 4% 0;
     margin-right: 16vw;
 }
 
@@ -75,26 +72,28 @@ h1 {
   width: 100%;
 }
 
+.left-wrapper button {
+  padding: 3% 5%;
+  border-radius: 7px;
+}
+
 .see-services {
-  align-self: flex-start;
   border: 2px solid white;
   color: black;
   font-weight: bold;
-  border-radius: 7px;
-  padding: 3% 5%;
   background-color: white;
 }
 
+.see-services:hover {
+  background: transparent;
+  border: 2px solid black;
+  color:white; 
+}
+
 .see-me {
-  align-self: flex-start;
   border: 1px solid rgb(160, 160, 160);
   color: white;
   font-weight: bold;
-  border-radius: 7px;
-  padding: 3% 5%;
-  /* width: 270px;
-  height: 65px; */
-  /* background: #00ac09; */
   background-color: transparent;
 }
 
@@ -102,59 +101,38 @@ h1 {
   border: 1px solid rgb(218, 218, 218);
 }
 
-
-.see-services:hover {
-  background: transparent;
-  border: 2px solid black;
-  color:white; 
-}
 button:focus {
   outline: none;
   box-shadow: none;
 }
 
-
-
 @media screen and (max-width: 1700px) {
-  
   .left-wrapper {
-
     margin-left: 12vw;
   }
 
   .right-wrapper {
-
     margin-right: 12vw;
   }
 }
 
-
 @media screen and (max-width: 1500px) {
-  
   .left-wrapper {
-
     margin-left: 8vw;
   }
   .right-wrapper {
-
     margin-right: 8vw;
   }
-
 }
 
 @media screen and (max-width: 1050px) {
-  
   .left-wrapper {
-
     margin-left: 5vw;
   }
   .right-wrapper {
-
     margin-right: 5vw;
   }
 }
-
-
 
 @media screen and (max-width: 880px) {
   .header-wrapper {
@@ -182,7 +160,6 @@ button:focus {
   }
 
   .right-wrapper {
-
     flex: 0 0 600px;
     padding: 0;
     margin: 0;
