@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { globalPaddingLeftAndRight } from '../app.constants';
 
 @Component({
   selector: 'app-services',
@@ -7,7 +6,6 @@ import { globalPaddingLeftAndRight } from '../app.constants';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  globalPaddingLeftAndRight = globalPaddingLeftAndRight;
   currentHover = { service1: false, service2: true, service3: false }
   constructor() { }
 

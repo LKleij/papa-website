@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { globalPaddingLeftAndRight } from '../app.constants';
 
 @Component({
   selector: 'app-services2',
@@ -7,7 +6,6 @@ import { globalPaddingLeftAndRight } from '../app.constants';
   styleUrls: ['./services2.component.css']
 })
 export class Services2Component implements OnInit {
-  globalPaddingLeftAndRight = globalPaddingLeftAndRight;
 
   constructor() { }
 

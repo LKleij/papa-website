@@ -16,7 +16,6 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-
 }
 
 .header-container {
@@ -36,9 +35,7 @@
 
 .aboutme-container {
   background-color: green;
-
 }
-
 
 .nav-top-wrapper {
 

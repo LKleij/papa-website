@@ -12,8 +12,6 @@ export class ServiceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.lastHovered)
-    console.log(this.lastHovered ? 0.6 : 0.0)
   }
 
 }

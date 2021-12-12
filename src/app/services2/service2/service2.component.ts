@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { globalPaddingLeftAndRight } from 'src/app/app.constants';
 
 @Component({
   selector: 'app-service2',
@@ -7,9 +6,9 @@ import { globalPaddingLeftAndRight } from 'src/app/app.constants';
   styleUrls: ['./service2.component.css']
 })
 export class Service2Component implements OnInit {
-  globalPaddingLeftAndRight = globalPaddingLeftAndRight;
 
   @Input('direction') direction = 'row';
+
   constructor() { }
 
   ngOnInit(): void {
