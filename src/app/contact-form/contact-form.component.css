@@ -9,7 +9,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0px 1000px #F8F9FA inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 .form-layout {
@@ -20,7 +20,7 @@ input:-webkit-autofill:active {
     gap: 40px;
     padding: 5%;
     width: 100%;
-    background-color: #F8F9FA;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     color: black;
@@ -28,7 +28,8 @@ input:-webkit-autofill:active {
 
 .form-control {
     border-radius: 5px;
-    background-color: #F8F9FA;
+    /* background-color: white; */
+    background-color: white;
     padding: 13px 20px;
 }
 .form-l {
