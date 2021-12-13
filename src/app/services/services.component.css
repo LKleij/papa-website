@@ -18,12 +18,14 @@ h1 {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: #3c38e5;
+    background-color:white;
+    column-gap: 2vw;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .services-content {
     height: 100%;
-    margin: 0 calc(10vw - 30px);
+    margin: 0 calc(16vw - 30px);
 }
 
 .service-item-container {
@@ -39,7 +41,26 @@ h1 {
 
 .title {
   padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 4vh;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .services-content {
+    margin: 0 calc(12vw - 30px);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .services-content {
+    margin: 0 calc(8vw - 30px);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+  .services-content {
+    margin: 0 calc(5vw - 30px);
+  }
 }
 
 @media screen and (max-width: 880px) {

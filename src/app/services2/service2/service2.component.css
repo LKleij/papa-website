@@ -1,25 +1,37 @@
 .service-wrapper {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-top: 10%;
 }
 
 .text-wrapper {
     flex: 1 1 50%;
-    position: relative;
+    /* position: relative; */
+    min-width: calc(440.05px - 5vw);
 }
 
 .image-wrapper {
     flex: 1 1 50%;
+    background-color: yellow;
     position: relative;
+    display: flex;
+    align-items: center;
+    /* min-width: 396.0; */
 }
 
 .image-img {
-    height: 100%;
-    width: 100%;
+    margin: auto;
+    height: 300px;
+    width: 300px;
     background-color: aqua;
 }
 
 .text-body {
     padding: 0 0%;
+}
+
+
+@media screen and (max-width: 880px) {
+    /* .service-wrapper {
+        flex-direction: column;
+    }     */
 }
